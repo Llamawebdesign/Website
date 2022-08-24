@@ -1,0 +1,423 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Margin Reset */
+* {
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* Colour variables */
+:root {
+    --background: #ffffff;
+    --text: #000000;
+    --accent: #ff3747;
+}
+
+/* Body */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--text);
+    background-color: var(--background);
+}
+
+/* Navigation bar */
+.nav {
+    width: auto;
+    height: auto;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 8px;
+    overflow: hidden;
+    background-color: var(--background);
+    height: 80px;
+    
+}
+  
+.nav li {
+    float: left;
+}
+  
+.nav li a {
+    display: block;
+    color: var(--accent);
+    text-align: center;
+    padding: 22px 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.nav li a span {
+    font-weight: bolder;
+}
+
+#dropdown {
+    background-color: var(--background);
+    color: var(--accent);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: none;
+}
+
+#dropdown .container {
+    width: 99vw;
+    margin: auto;
+    text-align: center;
+    font-size: 4em;
+    padding: 8px;
+}
+
+#dropdown .container .exit {
+    float: right;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+#dropdown .container .content {
+    margin-top: 2em;
+}
+
+#dropdown .container .content p {
+    margin-top: 6vh;
+}
+
+#dropdown .container .content a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: underline !important;
+}
+
+/* Splash Screen */
+
+.splash {
+    width: 100vw;
+    background-color: var(--accent);
+    padding: 6% 0;
+}
+
+.splash-cont {
+    margin: auto;
+    width: 70%;
+    height: 70% !important;
+    background-color: white;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.splash-cont p {
+    font-size: 2vh;
+}
+
+.splash-cont h2 {
+    font-size: 3vh;
+    text-decoration: underline;
+}
+
+/* Side-by-side text and images */
+.align {
+    margin: auto;
+}
+
+.align img {
+    border-radius: 16px;
+    float: left;
+    margin: 16px;
+    width: 38%;
+}
+
+.align p, h2 {
+    word-wrap: break-word;
+}
+
+.content {
+    width: 70vw;
+    height: auto;
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+    margin: auto;
+}
+
+.content a {
+    color: var(--accent);
+}
+
+.content a:hover {
+    opacity: 0.7;
+}
+
+.title {
+    text-align: center;
+    font-size: 5vh;
+    font-weight: lighter;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+
+.column-port-1 {
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.column-port-2 {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.column-port-3 {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+}
+
+.column-port-1 img {
+    margin-top: 1em;
+    border-radius: 16px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.column-port-2 img {
+    margin-top: 1em;
+    border-radius: 16px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.column-port-1 h1 {
+    font-weight: lighter;
+    text-align: center;
+}
+
+.column-port-2 h1 {
+    font-weight: lighter;
+    text-align: center;
+}
+
+.column-port-1 a {
+    color: var(--accent);
+    text-decoration: underline;
+ }
+
+.column-port-2 a {
+   color: var(--accent);
+   text-decoration: underline;
+}
+
+.column-port-3 img {
+    margin-top: 1em;
+    border-radius: 16px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.column-port-3 h1 {
+    font-weight: lighter;
+    text-align: center;
+}
+
+.column-port-3 a {
+   color: var(--accent);
+   text-decoration: underline;
+}
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+
+  .row-port {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .card {
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+
+  .card i {
+    color: white;
+    background-color: #ff3747;
+    padding: 24px;
+    font-size: 1.5em;
+    margin-bottom: 16px;
+    border-radius: 16px;
+  }
+
+  .card h1 {
+    font-size: 3vh;
+    text-decoration: none;
+    font-weight: lighter;
+    margin-bottom: 8px;
+  }
+
+  .card p {
+    font-size: 1.7vh;
+  }
+
+  /* Contact page */
+
+  .contact p {
+    font-size: 2vh;
+    margin-bottom: 1em;
+  }
+
+/* Footer */
+
+#footer {
+    margin-top: 2.5em;
+    width: 100vw;
+    background-color: rgb(248, 248, 248);
+    height: auto;
+    padding: 24px;
+}
+
+#footer h2 {
+    text-align: center;
+    font-weight: lighter;
+}
+
+#footer .copyright {
+    margin-top: 16px;
+    text-align: center;
+}
+
+#footer a {
+    color: var(--text);
+    transition: 0.3s;
+}
+
+#footer a:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.footer-cont {
+    margin: auto;
+    width: 85vw;
+    text-align: center;
+}
+
+.footer-1 {
+    display: inline-block;
+    margin-right: 8vw;
+}
+
+.footer-2 {
+    display: inline-block;
+    margin-left: 8vw;
+}
+
+/* Mobile optimisations */
+
+.mob-hide { /* Hide on mobile */
+    display: block;
+}
+
+.mob-show { /* Show on mobile */
+    display: none;
+}
+
+
+@media only screen and (max-width: 1026px) {
+
+    .mob-hide {
+        display: none;
+    }
+
+    .mob-show {
+        display: block;
+    }
+
+    .nav li a {
+        font-size: 2em;
+        padding: 12px 16px;
+    }
+
+    .splash-cont {
+        width: 90%;
+        padding: 8px;
+    }
+
+    .align h2 {
+        text-decoration: none;
+    }
+
+    .column, .column-port-2, .column-port-3 {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    
+    /* Style the counter cards */
+    .card {
+      padding: 16px;
+      text-align: center;
+    }
+
+    .card h1 {
+        text-align: center;
+    }
+
+    .card p {
+        text-align: left;
+    }
+
+    .content {
+        width: 95vw;
+    }
+
+    #footer {
+        width: 100vw;
+        background-color: rgb(248, 248, 248);
+        height: auto;
+        padding: 8px;
+    }
+
+    .footer-cont {
+        margin: auto;
+        width: 90vw;
+        text-align: center;
+    }
+
+    .footer-1 {
+        display: block;
+        margin-right: 0;
+    }
+    
+    .footer-2 {
+        display: block;
+        margin-left: 0;
+        margin-top: 16px;
+    }
+
+    #footer .copyright {
+        margin-top: 16px;
+    }
+
+}

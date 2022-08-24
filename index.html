@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llama Web Design</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="assets/js/navbar.js"></script>
+    <link rel="shortcut icon" type="image/png" href="assets/images/logo.png" />
+</head>
+<body>
+
+    <div id="dropdown">
+        <div class="container">
+            <div class="exit">
+                <a onclick="ddhide()">x</a>
+            </div>
+            <div class="content">
+                <p><a onclick="ddhide()" href="#" class="active">Home</a></p>
+                <p><a onclick="ddhide()" href="#about">About</a></p>
+                <p><a onclick="ddhide()" href="#services">Services</a></p>
+                <p><a onclick="ddhide()" href="#portfolio">Portfolio</a></p>
+                <p><a onclick="ddhide()" href="#contact">Contact</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="nav">
+        
+        <ul>
+            <img src="assets/images/logo.png" alt="Llama Web Design Logo" height="100%">
+            <li style="float:right !important" class="mob-show"><a onclick="ddshow()"><span><b>☰</b></span> </a></li>
+            <li style="float:right !important" class="mob-hide"><a href="#contact">Contact</a></li>
+            <li style="float:right !important" class="mob-hide"><a href="#portfolio">Portfolio</a></li>
+            <li style="float:right !important" class="mob-hide"><a href="#services">Services</a></li>
+            <li style="float:right !important" class="mob-hide"><a href="#about">About</a></li>
+            <li style="float:right !important" class="mob-hide"><a href="https://llamawebdesign.co.uk">Home</a></li>
+          </ul>
+    </div>
+
+    <div class="splash" id="about">
+        <div class="splash-cont">
+            <div class="align">
+                <img src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Alt text" class="mob-hide">
+                <br />
+                <h2>More than <b><u>Website Design</u></b></h2>
+                <p>
+                    Llama Web Design create affordable websites for everybody. We serve both local businesses throughout Yorkshire as well as people across the globe. 
+                    <br /><br />
+                    We offer the best Search Engine Optimisation compared to  website building applications, so we will personally ensure that your website reaches the top of the search results.
+                    <br /><br />
+                    We work closely with clients, to offer the best website designs at the best price. We make sure that the website we create is one that you are proud to have representing you or your business.
+                    <br /><br />
+                    We will set up and host your website on our dedicated server for a lower-than-average cost and ensure that your website stays online with Namecheap's 100% uptime.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="row">
+
+            <h1 class="title" id="services">
+                Services
+            </h1>
+
+            <div class="column">
+              <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h1>Design</h1>
+                <p>We design all of our websites from scratch. We do not use any drag-and-drop website builders or website frameworks, rather we design and program each website from scratch, discussing with our clients in every step of the process.</p>
+              </div>
+            </div>
+          
+            <div class="column">
+                <div class="card">
+                <i class="fa-solid fa-wrench"></i>
+                  <h1>Hosting</h1>
+                  <p>We provide the best hosting solutions on our dedicated server for a lower-than-average price, which allow for custom email addresses to be created for your website domain.</p>
+                </div>
+              </div>
+            
+              <div class="column">
+                <div class="card">
+                <i class="fa-solid fa-laptop"></i>
+                  <h1>Domains</h1>
+                  <p>We purchase our domains from <a href="https://namecheap.com" target="_blank">Namecheap</a>, a domain provider that offers low prices on top level domains. Namecheap domains integrate into our dedicated server, hosted by Namecheap, effortlessly, meaning your finished site could be up and running in hours.</p>
+                </div>
+              </div>
+            
+              <div class="column">
+                <div class="card">
+                    <i class="fa-solid fa-envelope"></i>
+                  <h1>Email</h1>
+                  <p>We have the ability to set up a personal, dedicated email server for your business that integrates with your top level domain provided by Namecheap.</p>
+                </div>
+              </div>
+
+          </div>
+
+          <h1 class="title" id="portfolio">
+            Portfolio
+          </h1>
+
+          <div class="row-port">
+
+            <div class="column-port-1">
+                <img src="assets/images/hideaway.jpeg" alt="" width="100%">
+                <h1>The Hideaway | <a href="https://hideawayyork.co.uk" target="_blank">View Website</a></h1>
+            </div>
+            
+          </div>
+    </div>
+
+    <div id="footer">
+      <div class="footer-cont">
+          <div class="footer-1">
+              <h2>Contact us</h2>
+              <p>You can contact us via email at: <a href="mailto:contact@llamawebdesign.co.uk" target="_blank">contact@llamawebdesign.co.uk</a></p>
+          </div>
+          <div class="footer-2">
+              <h2>Services</h2>
+              <p><a href="#services">Click here to view our list of services.</a></p>
+          </div>
+      </div>
+      <p class="copyright">© Llama Web Design</p>
+  </div>
+
+</body>
+</html>
